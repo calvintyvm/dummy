@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("../../config/fonts/Barlow_Condensed/BarlowCondensed-Medium.woff2")
+      format("woff2"),
+    url("../../config/fonts/Barlow_Condensed/BarlowCondensed-Medium.woff")
+      format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+button {
+  font-family: "Barlow Condensed";
+  font-size: 24px;
+  color: #262626;
+  letter-spacing: 0;
+  background-color: #ffd200;
+  border-style: none;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}

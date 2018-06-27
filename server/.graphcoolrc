@@ -1,0 +1,3 @@
+targets:
+  dummyproject: shared-us-west-2/cjil82mla6ehw0106yerzafau
+  default: dummyproject
