@@ -4,7 +4,20 @@ import { Form, Field } from "react-final-form";
 import React, { Component } from "react";
 import { graphql } from "react-apollo";
 import gql from "graphql-tag";
+import styled from "styled-components";
 import { Mutation } from "react-apollo";
+
+const ButtonTrue = styled.button`
+  font-size: 24px;
+  color: #262626;
+  letter-spacing: 0;
+  background-color: #ffd200;
+  border-style: none;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 100px;
+`;
 
 const createEmailMutation = gql`
   mutation(
@@ -162,41 +175,44 @@ class EmailForm extends Component {
                 <div className="radioContainer">
                   <label>{"are you a realtor?".toUpperCase()}</label>
                   <div className="innerRadio">
-                    <label>
+                    <div className="radiomarkcontainer">
                       <Field
                         name="realtor"
                         component="input"
                         type="radio"
                         value="yes"
                       />
-                      Yes
-                    </label>
-                    <label>
+                      <label>Yes</label>
+                      <span className="radiomark" />
+                    </div>
+                    <div className="radiomarkcontainer">
                       <Field
                         name="realtor"
                         component="input"
                         type="radio"
                         value="no"
                       />
-                      No
-                    </label>
+                      <label>No</label>
+                      <span className="radiomark" />
+                    </div>
                   </div>
                 </div>
                 <div className="checkboxContainer">
-                  <Field
-                    name="recieveEmail"
-                    component="input"
-                    type="checkbox"
-                  />
+                  <div className="innerCheckBox">
+                    <Field
+                      name="recieveEmail"
+                      component="input"
+                      type="checkbox"
+                    />
+                    <span className="checkmark" />
+                  </div>
                   <label>
-                    {"yes, i'd like to recieve emails from coco house and/or konnect developments. i understand i can unsubscribe".toUpperCase()}
+                    {"yes, i'd like to recieve emails from coco house and/or konnect developments. i understand i can unsubscribe anytime.".toUpperCase()}
                   </label>
                 </div>
-                <div className="buttons">
-                  <button type="submit" disabled={invalid || pristine}>
-                    Submit
-                  </button>
-                </div>
+                <ButtonTrue type="submit" disabled={invalid || pristine}>
+                  {"submit".toUpperCase()}
+                </ButtonTrue>
               </form>
             )}
           />

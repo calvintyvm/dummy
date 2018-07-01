@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("../../config/fonts/Barlow_Condensed/BarlowCondensed-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .formContainer {
   display: flex;
   flex-direction: column;
@@ -15,10 +23,12 @@ input {
 input::placeholder {
   margin-left: 1em;
   color: black;
+  font-family: "Barlow Condensed";
 }
 input::placeholder {
   padding-left: 1em;
 }
+
 .inputField {
   width: 100%;
   margin-bottom: 1.2em;
@@ -26,12 +36,173 @@ input::placeholder {
 
 .radioContainer {
   display: flex;
+  justify-content: space-between;
+  width: 295px;
+  margin-left: 13px;
+  margin-top: 15px;
 }
 
 .innerRadio {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  align-items: center;
+}
+.innerRadio label {
   display: flex;
 }
 
 .checkboxContainer {
   display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin-bottom: 2.2em;
+  margin-top: 15px;
+}
+
+.radioContainer {
+  font-family: "Barlow Condensed";
+  font-size: 13px;
+  margin-bottom: 1.2em;
+}
+
+.innerCheckBox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.innerCheckBox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.innerCheckBox input:checked ~ .checkmark {
+  background-color: white;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.innerCheckBox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.innerCheckBox .checkmark:after {
+  left: 15px;
+  top: 4px;
+  width: 5px;
+  height: 25px;
+  border: solid #ffd200;
+  border-width: 0 1px 1px 0;
+  transform: rotate(30deg);
+}
+
+.innerCheckBox input {
+  height: 35px;
+  width: 35px;
+  left: 0;
+  z-index: 1;
+}
+
+.checkboxContainer label {
+  font-family: "Barlow Condensed";
+  font-size: 13px;
+  width: 200px;
+}
+
+/* checkbox */
+
+.radiomarkcontainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  margin-left: 0%;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radiomarkcontainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  left: 0px;
+  height: 20px;
+  width: 20px;
+  z-index: 1;
+  top: -6px;
+}
+
+/* Create a custom radio button */
+.radiomark {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radiomarkcontainer:hover input ~ .radiomark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radiomarkcontainer input:checked ~ .radiomark {
+  background-color: white;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radiomark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radiomarkcontainer input:checked ~ .radiomark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radiomarkcontainer .radiomark:after {
+  top: 3px;
+  left: 3px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: #ffd200;
+}
+
+.radiomarkcontainer label {
+  font-size: 13px;
 }
