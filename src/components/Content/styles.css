@@ -181,6 +181,9 @@
   font-weight: bold;
   line-height: 35px;
 }
+.slick-next {
+  display: none !important;
+}
 
 .middle-girl p {
   font-family: "Cardo";
@@ -279,6 +282,19 @@
   font-size: 15px !important;
 }
 @media (min-width: 600px) {
+  .middle img {
+    width: 510px;
+    margin: 0 auto;
+    margin-top: 10%;
+  }
+
+  .middle h2 {
+    text-align: center;
+    font-size: 36px;
+    font-family: "Cardo";
+    font-weight: bold;
+    line-height: 35px;
+  }
 }
 
 @media (min-width: 1040px) {

@@ -302,7 +302,7 @@ span {
   .footerContainer1 {
     display: flex;
     flex-direction: row;
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
   }
   .footerContainer {
@@ -343,5 +343,11 @@ span {
   }
   .master-foot-container {
     margin-top: 8%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .footerContainer1 {
+    width: 85%;
   }
 }
