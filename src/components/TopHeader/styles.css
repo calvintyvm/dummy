@@ -182,7 +182,8 @@
   margin-top: 10%;
 }
 
-.register-container span {
+.register-container a {
+  text-decoration: none;
   font-size: 1.5em;
   color: #262626;
   letter-spacing: 0;
@@ -231,4 +232,97 @@
   font-family: "Cardo";
   color: #ffd200;
   letter-spacing: 1.5px;
+}
+
+@media (min-width: 600px) {
+  /* .scroll {
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    bottom: 30px;
+    left: 46%;
+  } */
+  /* .register-container {
+    text-align: right;
+    margin-top: 10%;
+    margin-right: 5%;
+  }
+
+  .register-container span {
+    font-size: 1.5em;
+    color: #262626;
+    letter-spacing: 0;
+    background-color: #ffd200;
+    border-style: none;
+    padding: 2%;
+    padding-left: 4.5%;
+    padding-right: 4.5%;
+    font-family: "Barlow Condensed";
+  } */
+}
+
+@media (min-width: 990px) {
+  .top {
+    height: 100vh;
+    background-image: url("../../config/images/couple@2x.jpg");
+    background-size: cover;
+    background-position: center top;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #ffd200;
+  }
+
+  .register-container {
+    text-align: right;
+    margin-top: 3%;
+    margin-right: 3%;
+  }
+  .register-container a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #262626;
+    letter-spacing: 0;
+    background-color: #ffd200;
+    border-style: none;
+    padding: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-family: "Barlow Condensed";
+  }
+
+  .top-center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 45%;
+    justify-content: space-between;
+    position: relative;
+    top: 18%;
+  }
+
+  .top-center-container h1 {
+    font-family: "Barlow Condensed";
+    font-size: 60px;
+    color: white;
+    letter-spacing: 3px;
+  }
+  .top-center-container span {
+    font-family: "Cardo";
+    color: #ffd200;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+  }
+
+  .top-logo {
+    width: 70px;
+    margin: 0 auto;
+  }
+
+  .scroll {
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    bottom: 30px;
+    left: 48%;
+  }
 }

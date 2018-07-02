@@ -6,6 +6,17 @@
   font-style: normal;
 }
 
+.form-title {
+  margin-top: 35%;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10%;
+  font-size: 25px;
+  font-family: "Cardo";
+  font-weight: bold;
+}
+
 .formContainer {
   display: flex;
   flex-direction: column;
@@ -205,4 +216,72 @@ input::placeholder {
 
 .radiomarkcontainer label {
   font-size: 13px;
+}
+
+.formContainer2 {
+  display: none;
+}
+
+.desk-form-title {
+  display: none;
+}
+
+button {
+  font-size: 24px;
+  color: #262626;
+  letter-spacing: 0;
+  background-color: #ffd200;
+  border-style: none;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 100px;
+  font-family: "Barlow Condensed";
+}
+@media (min-width: 990px) {
+  .formContainer {
+    display: none;
+  }
+  .formContainer2 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .duocon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .inputField {
+    width: 48%;
+    margin-bottom: 1.2em;
+  }
+  .button-container {
+    margin: 0 auto;
+  }
+  .desk-form-title {
+    margin-top: 5%;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: 25px;
+    font-family: "Cardo";
+    font-weight: bold;
+  }
+  button {
+    font-size: 24px;
+    color: #262626;
+    letter-spacing: 0;
+    background-color: #ffd200;
+    border-style: none;
+    padding: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-family: "Barlow Condensed";
+  }
 }

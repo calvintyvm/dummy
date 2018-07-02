@@ -6,8 +6,21 @@ import { graphql } from "react-apollo";
 import gql from "graphql-tag";
 import styled from "styled-components";
 import { Mutation } from "react-apollo";
+import ScrollableAnchor from "react-scrollable-anchor";
 
 const ButtonTrue = styled.button`
+  font-size: 24px;
+  color: #262626;
+  letter-spacing: 0;
+  background-color: #ffd200;
+  border-style: none;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 100px;
+`;
+
+const ButtonTrue1 = styled.button`
   font-size: 24px;
   color: #262626;
   letter-spacing: 0;
@@ -90,130 +103,293 @@ class EmailForm extends Component {
               };
               addEmail({ variables: newEmail });
             }}
-            render={({ handleSubmit, pristine, invalid, values }) => (
-              <form onSubmit={handleSubmit} className="formContainer">
-                <div className="inputField">
-                  <Field
-                    name="firstName"
-                    component="input"
-                    type="text"
-                    placeholder={"first name".toUpperCase()}
-                  />
-                </div>
-                <div className="inputField">
-                  <Field
-                    name="lastName"
-                    component="input"
-                    type="text"
-                    placeholder={"last name".toUpperCase()}
-                  />
-                </div>
-                <div className="inputField">
-                  <Field
-                    name="email"
-                    component="input"
-                    type="text"
-                    placeholder={"email".toUpperCase()}
-                  />
-                </div>
-                <div className="inputField">
-                  <Field
-                    name="phoneNumber"
-                    component="input"
-                    type="text"
-                    placeholder={"phone number".toUpperCase()}
-                  />
-                </div>
-                <div className="inputField">
-                  <Field
-                    name="postalCode"
-                    component="input"
-                    type="text"
-                    placeholder={"phone number".toUpperCase()}
-                  />
-                </div>
-                <div className="inputField">
-                  <Field
-                    name="priceRange"
-                    component="input"
-                    type="text"
-                    placeholder={"what is your price range".toUpperCase()}
-                  />
-                </div>
-                <div className="inputField">
-                  <Field
-                    name="ageGroup"
-                    component="input"
-                    type="text"
-                    placeholder={"what is your age group".toUpperCase()}
-                  />
-                </div>
-                <div className="inputField">
-                  <Field
-                    name="manyBedrooms"
-                    component="input"
-                    type="text"
-                    placeholder={"how many bedrooms do you prefer".toUpperCase()}
-                  />
-                </div>
-                <div className="inputField">
-                  <Field
-                    name="hearAbout"
-                    component="input"
-                    type="text"
-                    placeholder={"how did you hear about us".toUpperCase()}
-                  />
-                </div>
-                <div className="inputField">
-                  <Field
-                    name="comments"
-                    component="input"
-                    type="text"
-                    placeholder={"comments".toUpperCase()}
-                  />
-                </div>
-                <div className="radioContainer">
-                  <label>{"are you a realtor?".toUpperCase()}</label>
-                  <div className="innerRadio">
-                    <div className="radiomarkcontainer">
+            render={({ handleSubmit, pristine, invalid, values, form }) => (
+              <ScrollableAnchor id={"form"}>
+                <div>
+                  <form className="formContainer">
+                    <h2 className="form-title">
+                      Register today and live an effortlessly connected life.
+                    </h2>
+                    <div className="inputField">
                       <Field
-                        name="realtor"
+                        name="firstName"
                         component="input"
-                        type="radio"
-                        value="yes"
+                        type="text"
+                        placeholder={"first name".toUpperCase()}
                       />
-                      <label>Yes</label>
-                      <span className="radiomark" />
                     </div>
-                    <div className="radiomarkcontainer">
+                    <div className="inputField">
                       <Field
-                        name="realtor"
+                        name="lastName"
                         component="input"
-                        type="radio"
-                        value="no"
+                        type="text"
+                        placeholder={"last name".toUpperCase()}
                       />
-                      <label>No</label>
-                      <span className="radiomark" />
                     </div>
-                  </div>
+                    <div className="inputField">
+                      <Field
+                        name="email"
+                        component="input"
+                        type="text"
+                        placeholder={"email".toUpperCase()}
+                      />
+                    </div>
+                    <div className="inputField">
+                      <Field
+                        name="phoneNumber"
+                        component="input"
+                        type="text"
+                        placeholder={"phone number".toUpperCase()}
+                      />
+                    </div>
+                    <div className="inputField">
+                      <Field
+                        name="postalCode"
+                        component="input"
+                        type="text"
+                        placeholder={"phone number".toUpperCase()}
+                      />
+                    </div>
+                    <div className="inputField">
+                      <Field
+                        name="priceRange"
+                        component="input"
+                        type="text"
+                        placeholder={"what is your price range".toUpperCase()}
+                      />
+                    </div>
+                    <div className="inputField">
+                      <Field
+                        name="ageGroup"
+                        component="input"
+                        type="text"
+                        placeholder={"what is your age group".toUpperCase()}
+                      />
+                    </div>
+                    <div className="inputField">
+                      <Field
+                        name="manyBedrooms"
+                        component="input"
+                        type="text"
+                        placeholder={"how many bedrooms do you prefer".toUpperCase()}
+                      />
+                    </div>
+                    <div className="inputField">
+                      <Field
+                        name="hearAbout"
+                        component="input"
+                        type="text"
+                        placeholder={"how did you hear about us".toUpperCase()}
+                      />
+                    </div>
+                    <div className="inputField">
+                      <Field
+                        name="comments"
+                        component="input"
+                        type="text"
+                        placeholder={"comments".toUpperCase()}
+                      />
+                    </div>
+                    <div className="radioContainer">
+                      <label>{"are you a realtor?".toUpperCase()}</label>
+                      <div className="innerRadio">
+                        <div className="radiomarkcontainer">
+                          <Field
+                            name="realtor"
+                            component="input"
+                            type="radio"
+                            value="yes"
+                          />
+                          <label>Yes</label>
+                          <span className="radiomark" />
+                        </div>
+                        <div className="radiomarkcontainer">
+                          <Field
+                            name="realtor"
+                            component="input"
+                            type="radio"
+                            value="no"
+                          />
+                          <label>No</label>
+                          <span className="radiomark" />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="checkboxContainer">
+                      <div className="innerCheckBox">
+                        <Field
+                          name="recieveEmail"
+                          component="input"
+                          type="checkbox"
+                        />
+                        <span className="checkmark" />
+                      </div>
+                      <label>
+                        {"yes, i'd like to recieve emails from coco house and/or konnect developments. i understand i can unsubscribe anytime.".toUpperCase()}
+                      </label>
+                    </div>
+                    <button
+                      onClick={() => {
+                        handleSubmit();
+                        form.reset();
+                      }}
+                      type="submit"
+                      disabled={invalid || pristine}
+                    >
+                      {"submit".toUpperCase()}
+                    </button>
+                  </form>
+                  {/* <ScrollableAnchor id={"form"}> */}
+                  <form className="formContainer2">
+                    <h2 className="desk-form-title">
+                      Register today and live an effortlessly connected life.
+                    </h2>
+                    <div className="duocon">
+                      <div className="inputField">
+                        <Field
+                          name="firstName"
+                          component="input"
+                          type="text"
+                          placeholder={"first name".toUpperCase()}
+                        />
+                      </div>
+                      <div className="inputField">
+                        <Field
+                          name="lastName"
+                          component="input"
+                          type="text"
+                          placeholder={"last name".toUpperCase()}
+                        />
+                      </div>
+                    </div>
+                    <div className="duocon">
+                      <div className="inputField">
+                        <Field
+                          name="email"
+                          component="input"
+                          type="text"
+                          placeholder={"email".toUpperCase()}
+                        />
+                      </div>
+                      <div className="inputField">
+                        <Field
+                          name="phoneNumber"
+                          component="input"
+                          type="text"
+                          placeholder={"phone number".toUpperCase()}
+                        />
+                      </div>
+                    </div>
+                    <div className="duocon">
+                      <div className="inputField">
+                        <Field
+                          name="postalCode"
+                          component="input"
+                          type="text"
+                          placeholder={"phone number".toUpperCase()}
+                        />
+                      </div>
+                      <div className="inputField">
+                        <Field
+                          name="priceRange"
+                          component="input"
+                          type="text"
+                          placeholder={"what is your price range".toUpperCase()}
+                        />
+                      </div>
+                    </div>
+                    <div className="duocon">
+                      <div className="inputField">
+                        <Field
+                          name="ageGroup"
+                          component="input"
+                          type="text"
+                          placeholder={"what is your age group".toUpperCase()}
+                        />
+                      </div>
+                      <div className="inputField">
+                        <Field
+                          name="manyBedrooms"
+                          component="input"
+                          type="text"
+                          placeholder={"how many bedrooms do you prefer".toUpperCase()}
+                        />
+                      </div>
+                    </div>
+                    <div className="duocon">
+                      <div className="inputField">
+                        <Field
+                          name="hearAbout"
+                          component="input"
+                          type="text"
+                          placeholder={"how did you hear about us".toUpperCase()}
+                        />
+                      </div>
+                      <div className="inputField">
+                        <Field
+                          name="comments"
+                          component="input"
+                          type="text"
+                          placeholder={"comments".toUpperCase()}
+                        />
+                      </div>
+                    </div>
+                    <div className="duocon">
+                      <div className="radioContainer">
+                        <label>{"are you a realtor?".toUpperCase()}</label>
+                        <div className="innerRadio">
+                          <div className="radiomarkcontainer">
+                            <Field
+                              name="realtor"
+                              component="input"
+                              type="radio"
+                              value="yes"
+                            />
+                            <label>Yes</label>
+                            <span className="radiomark" />
+                          </div>
+                          <div className="radiomarkcontainer">
+                            <Field
+                              name="realtor"
+                              component="input"
+                              type="radio"
+                              value="no"
+                            />
+                            <label>No</label>
+                            <span className="radiomark" />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="checkboxContainer">
+                        <div className="innerCheckBox">
+                          <Field
+                            name="recieveEmail"
+                            component="input"
+                            type="checkbox"
+                          />
+                          <span className="checkmark" />
+                        </div>
+                        <label>
+                          {"yes, i'd like to recieve emails from coco house and/or konnect developments. i understand i can unsubscribe anytime.".toUpperCase()}
+                        </label>
+                      </div>
+                    </div>
+                    <div className="button-container">
+                      <button
+                        onClick={() => {
+                          handleSubmit();
+                          form.reset();
+                        }}
+                        type="submit"
+                        disabled={invalid || pristine}
+                      >
+                        {"submit".toUpperCase()}
+                      </button>
+                    </div>
+                  </form>
+                  {/* </ScrollableAnchor> */}
                 </div>
-                <div className="checkboxContainer">
-                  <div className="innerCheckBox">
-                    <Field
-                      name="recieveEmail"
-                      component="input"
-                      type="checkbox"
-                    />
-                    <span className="checkmark" />
-                  </div>
-                  <label>
-                    {"yes, i'd like to recieve emails from coco house and/or konnect developments. i understand i can unsubscribe anytime.".toUpperCase()}
-                  </label>
-                </div>
-                <ButtonTrue type="submit" disabled={invalid || pristine}>
-                  {"submit".toUpperCase()}
-                </ButtonTrue>
-              </form>
+              </ScrollableAnchor>
             )}
           />
         )}

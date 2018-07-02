@@ -167,13 +167,14 @@
   background-color: #151515;
   width: 100%;
   height: 850px;
+  display: block;
 }
 
 .footerImageContainer {
   margin: 0 auto;
-  width: 80%;
+  width: 300px;
   position: relative;
-  height: 38%;
+  height: 300px;
 }
 .map {
   width: 100%;
@@ -283,4 +284,64 @@ span {
 }
 .terms span {
   color: #d8d8d8;
+}
+.footerContainer1 {
+  display: none;
+}
+.master-foot-container {
+  margin-top: 0%;
+}
+
+@media (min-width: 990px) {
+  .footerImageContainer {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    height: 38%;
+  }
+  .footerContainer1 {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin: 0 auto;
+  }
+  .footerContainer {
+    display: none;
+  }
+  .terms {
+    margin-top: 0;
+  }
+  .infocontainer {
+    width: 50%;
+  }
+  .addresscontainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .credentials {
+    width: 110%;
+  }
+  .footerTextContainer {
+    display: flex;
+    flex-direction: row;
+    width: 140%;
+    justify-content: space-between;
+    margin-top: 5%;
+  }
+  .map {
+    height: 285px;
+    width: 285px;
+    top: -70px;
+  }
+  .outfootercontainer {
+    background-color: #151515;
+    width: 100%;
+    height: 320px;
+  }
+  .otherInfoCoco {
+    margin-bottom: 30px;
+  }
+  .master-foot-container {
+    margin-top: 8%;
+  }
 }

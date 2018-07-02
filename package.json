@@ -16,7 +16,11 @@
     "react-final-form": "^3.6.2",
     "react-form": "^3.5.5",
     "react-parallax": "^1.7.0",
+    "react-responsive-carousel": "^3.1.41",
     "react-scripts": "1.1.4",
+    "react-scrollable-anchor": "^0.6.1",
+    "react-slick": "^0.23.1",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^3.3.2"
   },
   "scripts": {

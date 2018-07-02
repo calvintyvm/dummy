@@ -7,7 +7,7 @@ const TopHeader = () => {
   return (
     <div className="top">
       <div className="register-container">
-        <span>REGISTER NOW</span>
+        <a href="#form">REGISTER NOW</a>
       </div>
       <div className="top-center-container">
         <img className="top-logo" src={logo} alt="logo" />
