@@ -33,12 +33,14 @@ input {
 }
 
 input::placeholder {
-  margin-left: 1em;
+  margin-left: 10px;
   color: black;
   font-family: "Barlow Condensed";
 }
-input::placeholder {
-  padding-left: 1em;
+
+.inputField input {
+  padding-left: 10px;
+  width: 95%;
 }
 
 .inputField {
