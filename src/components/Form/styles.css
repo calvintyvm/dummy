@@ -242,6 +242,9 @@ button {
   font-family: "Barlow Condensed";
 }
 
+@media (min-width: 970px) {
+}
+
 /* desktop */
 @media (min-width: 990px) {
   .formContainer {

@@ -90,6 +90,7 @@
   line-height: 24px;
   margin: 0 auto;
   margin-top: 10%;
+  height: 80px;
 }
 
 .middle-carousel h3 {
@@ -173,7 +174,7 @@
 
 /* desktop */
 
-@media (min-width: 990px) {
+@media (min-width: 1064px) {
   .middle-noc-title {
     display: block;
   }
