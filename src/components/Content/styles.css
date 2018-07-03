@@ -8,138 +8,10 @@
 
 @font-face {
   font-family: "Barlow Condensed";
-  src: url("../../config/fonts/Barlow_Condensed/BarlowCondensed-Thin.woff")
-    format("woff");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Barlow Condensed";
-  src: url("../../config/fonts/Barlow_Condensed/BarlowCondensed-Italic.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Barlow Condensed";
-  src: url("../../config/fonts/Barlow_Condensed/BarlowCondensed-BlackItalic.woff")
-    format("woff");
-  font-weight: 900;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Barlow Condensed";
   src: url("../../config/fonts/Barlow_Condensed/BarlowCondensed-Light.woff")
     format("woff");
   font-weight: 300;
   font-style: normal;
-}
-
-@font-face {
-  font-family: "Barlow Condensed";
-  src: url("../../config/fonts/Barlow_Condensed/BarlowCondensed-Bold.woff")
-    format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Barlow Condensed";
-  src: url("../../config/fonts/Barlow_Condensed/BarlowCondensed-ExtraLightItalic.woff")
-    format("woff");
-  font-weight: 200;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Barlow Condensed";
-  src: url("../../config/fonts/Barlow_Condensed/BarlowCondensed-MediumItalic.woff")
-    format("woff");
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Barlow Condensed";
-  src: url("../../config/fonts/Barlow_Condensed/BarlowCondensed-ExtraLight.woff")
-    format("woff");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Barlow Condensed";
-  src: url("../../config/fonts/Barlow_Condensed/BarlowCondensed-Black.woff")
-    format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Barlow Condensed";
-  src: url("../../config/fonts/Barlow_Condensed/BarlowCondensed-SemiBold.woff")
-    format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Barlow Condensed";
-  src: url("../../config/fonts/Barlow_Condensed/BarlowCondensed-Medium.woff")
-    format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Barlow Condensed";
-  src: url("../../config/fonts/Barlow_Condensed/BarlowCondensed-ExtraBoldItalic.woff")
-    format("woff");
-  font-weight: 800;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Barlow Condensed";
-  src: url("../../config/fonts/Barlow_Condensed/BarlowCondensed-ExtraBold.woff")
-    format("woff");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Barlow Condensed";
-  src: url("../../config/fonts/Barlow_Condensed/BarlowCondensed-SemiBoldItalic.woff")
-    format("woff");
-  font-weight: 600;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Barlow Condensed";
-  src: url("../../config/fonts/Barlow_Condensed/BarlowCondensed-ThinItalic.woff")
-    format("woff");
-  font-weight: 100;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Barlow Condensed";
-  src: url("../../config/fonts/Barlow_Condensed/BarlowCondensed-LightItalic.woff")
-    format("woff");
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Barlow Condensed";
-  src: url("../../config/fonts/Barlow_Condensed/BarlowCondensed-BoldItalic.woff")
-    format("woff");
-  font-weight: bold;
-  font-style: italic;
 }
 
 @font-face {
@@ -151,17 +23,12 @@
 
 @font-face {
   font-family: "Cardo";
-  src: url("../../config/fonts/Cardo/Cardo-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Cardo";
   src: url("../../config/fonts/Cardo/Cardo-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
+/* mobile */
 
 .middle {
   width: 100%;
@@ -240,11 +107,6 @@
   width: 95%;
 }
 
-.slider-control-bottomcenter {
-  /* text-align: center;
-    position: initial !important;
-    transform: translateX(0) !important; */
-}
 .middle-carousel button {
   color: #ffd200 !important;
   font-size: 40px !important;
@@ -291,6 +153,8 @@
   opacity: 1 !important;
   background-color: #ffd200;
 }
+
+/* tablet */
 @media (min-width: 600px) {
   .middle img {
     width: 510px;
@@ -307,7 +171,9 @@
   }
 }
 
-@media (min-width: 1040px) {
+/* desktop */
+
+@media (min-width: 990px) {
   .middle-noc-title {
     display: block;
   }
@@ -323,7 +189,7 @@
     align-items: center;
     width: 70%;
     margin: 0 auto;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
   }
   .middle-girl-desktop p {
     font-family: "Cardo";
@@ -370,9 +236,6 @@
   .middle-nocarousel-desktop {
     display: flex;
     justify-content: center;
-    /* justify-content: space-between; */
-    /* margin-left: 10%;
-    margin-right: 10%; */
     margin-top: 3%;
     margin-bottom: 10%;
   }
@@ -380,9 +243,6 @@
     width: 310px;
     height: 100%;
     margin-top: 0;
-    /* transition: 2.3s; */
-    /* transition: 0.5s ease-in-out; */
-    /* border: 5px solid #ffd200; */
   }
 
   @-webkit-keyframes fadeIn {
@@ -433,16 +293,6 @@
   .item-container:hover .ski-title {
     display: none;
   }
-
-  /* .border {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 11px;
-    left: 0px;
-    border-bottom: 5px solid#ffd200;
-    width: 100%;
-  } */
 
   .wordtitle {
     color: white;

@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="master-foot-container">
       <div className="footerContainer">
         <div className="footerImageContainer">
-          <img className="map" src={map} />
+          <img className="map" src={map} alt="map" />
         </div>
         <div className="footerTextContainer">
           <div className="footerInfo">
@@ -31,11 +31,11 @@ const Footer = () => {
           <div className="credentials">
             <div className="devBy">
               <span className="devTitle">Developed By</span>
-              <img className="konnect" src={konnect} />
+              <img className="konnect" src={konnect} alt="konnect" />
             </div>
             <div className="salesBy">
               <span className="saleTitle">Sales & Marketing</span>
-              <img className="oakwyn" src={oakwyn} />
+              <img className="oakwyn" src={oakwyn} alt="oakwyn" />
             </div>
           </div>
           <div className="terms">
@@ -51,7 +51,7 @@ const Footer = () => {
       <div className="outfootercontainer">
         <div className="footerContainer1">
           <div className="footerImageContainer">
-            <img className="map" src={map} />
+            <img className="map" src={map} alt="map" />
           </div>
           <div className="footerTextContainer">
             <div className="infocontainer">
@@ -87,11 +87,11 @@ const Footer = () => {
               <div className="credentials">
                 <div className="devBy">
                   <span className="devTitle">Developed By</span>
-                  <img className="konnect" src={konnect} />
+                  <img className="konnect" src={konnect} alt="konnect" />
                 </div>
                 <div className="salesBy">
                   <span className="saleTitle">Sales & Marketing</span>
-                  <img className="oakwyn" src={oakwyn} />
+                  <img className="oakwyn" src={oakwyn} alt="oakwyn" />
                 </div>
               </div>
             </div>

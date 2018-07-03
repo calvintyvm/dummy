@@ -6,8 +6,9 @@
   font-style: normal;
 }
 
+/* mobile */
 .form-title {
-  margin-top: 35%;
+  margin-top: 150px;
   display: block;
   width: 100%;
   text-align: center;
@@ -238,6 +239,8 @@ button {
   margin-bottom: 100px;
   font-family: "Barlow Condensed";
 }
+
+/* desktop */
 @media (min-width: 990px) {
   .formContainer {
     display: none;
